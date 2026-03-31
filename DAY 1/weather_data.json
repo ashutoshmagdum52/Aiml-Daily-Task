@@ -1,0 +1,72 @@
+[
+    {
+        "city": "Mumbai",
+        "temp_c": 27.99,
+        "humidity": 74,
+        "weather": "Haze",
+        "last_updated": "2026-03-28 21:25:37"
+    },
+    {
+        "city": "Delhi",
+        "temp_c": 28.05,
+        "humidity": 39,
+        "weather": "Haze",
+        "last_updated": "2026-03-28 21:15:32"
+    },
+    {
+        "city": "Bengaluru",
+        "temp_c": 27.0,
+        "humidity": 53,
+        "weather": "Clouds",
+        "last_updated": "2026-03-28 21:24:58"
+    },
+    {
+        "city": "Hyderabad",
+        "temp_c": 28.23,
+        "humidity": 51,
+        "weather": "Clouds",
+        "last_updated": "2026-03-28 21:18:54"
+    },
+    {
+        "city": "Chennai",
+        "temp_c": 28.87,
+        "humidity": 78,
+        "weather": "Clouds",
+        "last_updated": "2026-03-28 21:20:10"
+    },
+    {
+        "city": "Kolkata",
+        "temp_c": 25.97,
+        "humidity": 78,
+        "weather": "Haze",
+        "last_updated": "2026-03-28 21:20:53"
+    },
+    {
+        "city": "Ahmedabad",
+        "temp_c": 31.17,
+        "humidity": 43,
+        "weather": "Clear",
+        "last_updated": "2026-03-28 21:24:39"
+    },
+    {
+        "city": "Pune",
+        "temp_c": 27.3,
+        "humidity": 10,
+        "weather": "Clear",
+        "last_updated": "2026-03-28 21:22:50"
+    },
+    {
+        "city": "Jaipur",
+        "temp_c": 28.62,
+        "humidity": 34,
+        "weather": "Haze",
+        "last_updated": "2026-03-28 21:27:11"
+    },
+    {
+        "city": "Lucknow",
+        "temp_c": 25.99,
+        "humidity": 61,
+        "weather": "Haze",
+        "last_updated": "2026-03-28 21:20:41"
+    }
+]

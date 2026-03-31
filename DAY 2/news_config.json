@@ -1,0 +1,7 @@
+{
+    "categories": {
+        "FINANCE": ["economy", "finance", "stock", "market", "bank", "interest", "inflation", "revenue", "fiscal", "gdp", "trade"],
+        "TECH": ["technology", "software", "ai", "artificial intelligence", "hardware", "internet", "crypto", "bitcoin", "startup", "innovation"],
+        "POLITICS": ["government", "election", "policy", "president", "senate", "law", "vote", "summit", "minister", "parliament", "treaty"]
+    }
+}
