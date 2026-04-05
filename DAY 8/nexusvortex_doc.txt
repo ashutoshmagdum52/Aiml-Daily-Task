@@ -1,0 +1,125 @@
+NEXUSVORTEX OPERATING SYSTEM — OFFICIAL TECHNICAL DOCUMENTATION
+
+PAGE 1: CORE KERNEL ARCHITECTURE & TEMPORAL SHARDING
+
+1.1 The Pulse-Core Evolution
+The NexusVortex Operating System represents a paradigm shift in decentralized computing.
+Unlike traditional monolithic kernels found in legacy systems like Windows, macOS, or Linux,
+NexusVortex utilizes a "Pulse-Core" synchronization layer. This layer does not rely on a
+central scheduler; instead, it utilizes a "Temporal-Oscillator" that pulses every 0.002
+microseconds. This high-frequency oscillation ensures that all 12 micro-shards remain in
+a state of "Quantum-Coherence."
+
+1.2 Shard-Specific Responsibilities
+Each of the 12 shards is hard-coded to manage specific system silos to prevent resource contention.
+Shards 01-03 handle the Hardware Abstraction Layer (HAL) and Interrupt Requests (IRQs).
+Shard 04 manages I/O Buffer management and Peripheral synchronization.
+Shards 05-06 handle Virtual Memory Paging and Swap-Space allocation.
+Shard 07 is the L3-Bridge — the most critical shard. It manages communication between the
+CPU cache and the Pulse-Core.
+Shard 08 handles Thread-level parallelism and load balancing.
+Shards 09-11 form the Aegis Security Layer and Wraith Firewall.
+Shard 12 handles External Networking (TCP/IP/Vortex-Protocol).
+
+1.3 The Stasis Mode Protocol
+Monitoring Shard-07 is mandatory for system stability. If Shard-07 reports a latency spike
+exceeding 40ms for more than three consecutive temporal pulses, the system enters a fail-safe
+state known as "Stasis Mode." In this mode, the Pulse-Core throttles all non-essential I/O
+to 5% of maximum capacity. This is done to prevent "Data Bleed," a condition where
+unsynchronized shards write conflicting data to the V-FAT32 file system.
+
+
+PAGE 2: HARDWARE PREREQUISITES & INSTALLATION TOPOLOGY
+
+2.1 The Theta-Sync Requirement
+NexusVortex OS is built exclusively for the Vortex-Gen2 and Vortex-Gen3 processor architectures.
+These processors include a hardware-level instruction set known as "Theta-Sync."
+Theta-Sync allows the 12 micro-shards to communicate without using the system bus, reducing
+latency by 94%. If the installer detects an x86, ARM64, or RISC-V processor lacking Theta-Sync,
+it will immediately terminate the installation and display Error Code: XV-909.
+Many junior technicians mistake this for a RAM failure, but it is strictly a CPU-compatibility flag.
+
+2.2 Memory and BIOS Configuration
+A minimum of 14GB of LPDDR5 RAM is required. The system BIOS must be flashed to "Nebula-Boot"
+firmware. Legacy BIOS and standard UEFI modes are incompatible with the Pulse-Core synchronization
+frequency. If "Nebula-Boot" is not enabled, the system will hang at the "Initializing Shards..."
+screen indefinitely.
+
+2.3 Partitioning the V-FAT32 Ecosystem
+The Vortex File Allocation Table (V-FAT32) is a 512-bit addressed file system supporting
+a single file size of 4.2 Petabytes. For a successful boot, the primary drive must contain
+three specific partitions: /pulse (100GB) stores the real-time shard-state logs and
+Temporal-Oscillator keys. /echo (exactly 512MB) is the recovery partition storing the
+"Pulse-Mirror" — if this partition is even 1MB off, the system triggers Error XV-402.
+/vortex holds the remaining drive space for user data and applications.
+
+PAGE 3: THE AEGIS SECURITY LAYER & BIOMETRIC FREQUENCY
+
+3.1 Deprecation of Legacy Authentication
+As of Version 9.2, NexusVortex has removed all support for alphanumeric passwords,
+2-Factor Authentication via SMS, and standard optical fingerprint scanners.
+These methods were deemed "low-resonance" and vulnerable to "Ghost-Admin" takeovers.
+
+3.2 Biometric-Frequency Identification (BFI)
+Security is now handled via BFI. The Aegis Layer utilizes the device's haptic feedback sensor
+to capture the "Resonance Frequency" of the user's cardiac rhythm (heartbeat).
+Every human heart vibrates at a unique frequency when under the 14.2 KHz "Pulse-Scan"
+emitted by the Vortex hardware. Users must remain within 2 inches of the sensor for 60 seconds
+during initial setup to map their "Resonance Profile."
+
+3.3 The Wraith Firewall (Shard-11)
+The Wraith Firewall is an autonomous agent residing in Shard-11. It monitors incoming
+network traffic for "Phased-Packets" — malicious data fragments attempting to bypass the
+Aegis Layer. If the Wraith Firewall detects three unauthorized packets from a single MAC
+address within a 600-second window, it "Black-Holes" that address. To unblock a blacklisted
+address, a Level-3 Administrator must perform a physical "Hardware Key-Turn" on the side of
+the Vortex-Server. Remote unblocking is impossible by design.
+
+
+PAGE 4: COMMAND LINE INTERFACE & KERNEL MANIPULATION
+
+4.1 Standard Diagnostic Utilities
+Engineers must memorize the core CLI commands for system maintenance.
+"vortex --status" generates a hexadecimal health report for all 12 Shards (0x00 = Offline, 0xFF = Optimal).
+"vortex --realign-pulse" is the primary fix for System Lag or UI Ghosting — it forces a hard
+reset of Shard-07 and Shard-04.
+"vortex --deploy-shield" manually cycles the Nebula-Shield encryption keys for all files
+on the /vortex partition.
+
+4.2 The Kernel Override Command
+In catastrophic scenarios where the system hangs during boot, an engineer may use:
+"sudo override --bypass-shards". This command allows the OS to boot on non-Theta-Sync hardware
+by disabling Shard-Synchronization. However, this bypasses the Aegis Security Layer and
+exposes the system to "Nebula-Leaks," which can cause permanent corruption of the /pulse partition.
+
+4.3 Environment Variables
+The variable VORTEX_PATH must be mapped to /pulse/bin. If it is incorrectly mapped to
+/vortex/bin, the system will fail to locate internal shard-management tools, and the CLI
+will return a "Command Not Found" error for all native vortex prefixes.
+
+PAGE 5: SUPPORT CHANNELS & ERROR CODE GLOSSARY
+
+5.1 Support Deprecation
+As of March 2026, all centralized support channels have been closed. This includes
+Email, Telephone, and Web-Chat support.
+
+5.2 Official Communication Channels
+Primary support is via Galactic-Relay Frequency 442.9 MHz.
+Secondary support for local server hardware issues uses short-wave radio at 14.2 KHz,
+monitored by autonomous support agents.
+
+5.3 Error Code Reference
+Error XV-909 indicates a CPU Architecture mismatch — Theta-Sync not found. Requires
+hardware upgrade to Vortex-Gen2 or higher.
+Error XV-402 indicates a storage partition inconsistency — the /echo partition must be
+exactly 512MB. Any deviation blocks shard synchronization.
+Error XV-101 indicates an Aegis Layer security perimeter breach. Run vortex --deploy-shield immediately.
+Error XV-777 indicates a Temporal-Core Shuffle Sync Failure. Perform a hard hardware reboot.
+Error XV-000 is a system-wide fatal pulse silence — all 12 shards have stopped responding.
+Contact support via Galactic-Relay Frequency 442.9 MHz.
+Error XV-505 indicates an environment path configuration error — remap VORTEX_PATH to /pulse/bin.
+
+5.4 Looking Ahead: Version 10.0 (Singularity)
+The upcoming Singularity update (Q4 2026) will remove all kernel-level drivers for
+physical keyboards and mice. The OS will transition to a 100% Neural-Link and
+Vocal-Gesture API interface.
