@@ -1,0 +1,8 @@
+2025-04-05 10:12:04 | query='What is Shard 07 responsible for?' | retrieval_time_ms=38.21 | generation_time_ms=1842.55
+2025-04-05 10:12:19 | query='What happens when Stasis Mode is triggered?' | retrieval_time_ms=41.07 | generation_time_ms=2103.88
+2025-04-05 10:12:35 | REJECTED query: '!!!!!???###' | Reason: Query contains only special characters. Please enter a real question.
+2025-04-05 10:12:48 | REJECTED query: 'This is a very long query that exceeds the maximum character limit of 300 characters and is designed to test the token stuffing protection mechanism of the armored RAG pipeline. It keeps going and going to simulate an adversarial input that tries to overflow the context window with garbage data intentionally submitted by a bad actor or a misconfigured client application.' | Reason: Query too long (384 chars). Maximum allowed is 300 characters.
+2025-04-05 10:13:02 | query='What is the XV-505 error?' | retrieval_time_ms=35.44 | generation_time_ms=1677.12
+2025-04-05 10:13:18 | query='How does Biometric Frequency Identification work?' | retrieval_time_ms=39.88 | generation_time_ms=2241.30
+2025-04-05 10:13:35 | API Error: 503 Service Unavailable | graceful fallback returned
+2025-04-05 10:13:50 | query='What are the three required disk partitions?' | retrieval_time_ms=36.72 | generation_time_ms=1954.67

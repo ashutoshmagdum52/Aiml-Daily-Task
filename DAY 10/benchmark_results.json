@@ -1,0 +1,30 @@
+{
+    "timestamp": "2025-04-05 11:30:22",
+    "config_a": {
+        "config": "Config A — Small Chunks (3 sentences)",
+        "chunk_size": 3,
+        "avg_score": 3.6,
+        "total_score": 18,
+        "results": [
+            {"question": "I'm seeing Error XV-505 in my terminal. What is the root cause and how do I fix it?", "score": 5},
+            {"question": "My system is extremely laggy. Which shards should I be worried about and what is the specific command to reset them?", "score": 4},
+            {"question": "Can I bypass the Theta-Sync requirement to install this on my old i7 laptop?", "score": 4},
+            {"question": "How does the OS handle user login now that passwords and 2FA are deprecated?", "score": 3},
+            {"question": "I have a MAC address that was black-holed by the Wraith Firewall. Can I unblock it using the Galactic-Relay?", "score": 2}
+        ]
+    },
+    "config_b": {
+        "config": "Config B — Large Chunks (8 sentences)",
+        "chunk_size": 8,
+        "avg_score": 4.4,
+        "total_score": 22,
+        "results": [
+            {"question": "I'm seeing Error XV-505 in my terminal. What is the root cause and how do I fix it?", "score": 5},
+            {"question": "My system is extremely laggy. Which shards should I be worried about and what is the specific command to reset them?", "score": 5},
+            {"question": "Can I bypass the Theta-Sync requirement to install this on my old i7 laptop?", "score": 4},
+            {"question": "How does the OS handle user login now that passwords and 2FA are deprecated?", "score": 4},
+            {"question": "I have a MAC address that was black-holed by the Wraith Firewall. Can I unblock it using the Galactic-Relay?", "score": 4}
+        ]
+    },
+    "winner": "Config B"
+}
